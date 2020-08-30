@@ -14,10 +14,13 @@
   </head>
   <!-- color #30bbbb -->
   <body>
+    <!-- Navbar with class to make it white and expand only when in large screens but display the button when on smaller screens -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- My Name. Non clickable -->
       <h1 class="navbar-brand border my-name text-white font-weight-bold justify-content-around">
         Jason Ozulumba
       </h1>
+      <!-- Button that displays at smaller screens width -->
       <button
         class="navbar-toggler"
         type="button"
@@ -27,6 +30,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!-- The Icon for the button -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,14 +43,18 @@
         </div>
       </div>
     </nav>
+    <!-- Line breaks so it shifts the card down -->
     <br /><br /><br />
+    <!-- The start of the container. Do not remove main class. It sets up the footer to keep it in place. -->
     <main class="main container">
       <div class="row">
+        <!-- col-11 and ml-3 is for when the viewport is small. It adds margin on left to keep it of the left side of the screen. -->
         <div class="col-11 ml-3 col-sm-8 card">
           <div class="card-body">
             <h1>About Me</h1>
             <hr />
             <p>
+              <!-- Image nested in the p tag and has "float left so it always left of the text" -->
               <img
                 src="https://via.placeholder.com/150"
                 class="img img-thumbnail float-left mr-3"
@@ -76,11 +84,11 @@
         </div>
       </div>
     </main>
-
+    <!-- Footer uses calc() to make it sticky. It classes are important to the shape of it -->
     <footer class="footer text-center border-top mt-2">
       <p>&#169; Copyright Jason Ozulumba</p>
     </footer>
-
+    <!-- JavaScript for the button toggles from bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
