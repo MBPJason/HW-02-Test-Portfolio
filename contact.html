@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar with class to make it white and expand only when in large screens but display the button when on smaller screens -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- My Name. Non clickable -->
       <h1 class="navbar-brand border my-name text-white font-weight-bold">
         Jason Ozulumba
       </h1>
+      <!-- Button that displays at smaller screens width -->
       <button
         class="navbar-toggler"
         type="button"
@@ -26,9 +29,11 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!-- The Icon for the button -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- ml-auto pushes the nav links to the right when not collapsed -->
         <div class="navbar-nav ml-auto">
           <a class="nav-link active" href="#"
             >Contact<span class="sr-only">(current)</span></a
@@ -38,36 +43,40 @@
         </div>
       </div>
     </nav>
+    <!-- Line breaks so it shifts the card down -->
     <br />
     <br />
     <br />
-    <!--  -->
-
+    <!-- The start of the container. Do not remove main class. It sets up the footer to keep it in place. -->
     <main class="main container">
       <div class="row">
+        <!-- col-11 and ml-3 is for when the viewport is small. It adds margin on left to keep it off of the left side of the screen. -->
         <div class="col-11 ml-3 col-sm-8 card">
           <div class="card-body">
             <form>
               <h1>Contact</h1>
               <hr />
+              <!--Name form. Type and placeholder properly indicates for it to be a text field  -->
               <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
+                <label for="exampleInputName1">Name</label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="name"
                   placeholder="Name"
                 />
               </div>
+              <!-- Email form. Type and placeholder properly indicates for it to be a email field -->
               <div class="form-group">
                 <label for="exampleInputPassword1">Email</label>
                 <input
-                  type="password"
+                  type="email"
                   class="form-control"
                   id="email"
                   placeholder="Email"
                 />
               </div>
+              <!-- Message form. Given text area and classes to indicate what it is used for  -->
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Message</label>
                 <textarea
@@ -77,17 +86,18 @@
                   placeholder="Message"
                 ></textarea>
               </div>
+              <!-- Simple button. Change btn-primary class button color in style.css -->
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </main>
-
+    <!-- Footer uses calc() to make it sticky. It classes are important to the shape of it -->
     <footer class="footer text-center border-top mt-2">
       <p>&#169; Copyright Jason Ozulumba</p>
     </footer>
-
+    <!-- JavaScript for the button toggles from bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
