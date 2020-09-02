@@ -4,7 +4,7 @@ A mockup test portfolio website that is built with bootstrap and made responsive
 
 ## Preview
 
-![Preview Screenshot](./assets/images/)
+![Preview Screenshot](./assets/images/Preview.png)
 
 ## Where to access
 
