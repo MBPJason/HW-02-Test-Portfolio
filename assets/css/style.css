@@ -3,41 +3,54 @@ p img {
   width: 200px;
 }
 
+/* Sets background color for my name in the navbar and button in contact page */
 .my-name,
 .btn-primary {
   background-color: #30bbbb !important;
 }
 
+/* Sets background photo to responsive */
 body {
   height: auto;
   width: 100%;
   background-image: url(../images/ignasi_pattern_s.png);
 }
-
+/* Very Important to setting the footer as sticky */
 .main {
   min-height: calc(100vh - 60px);
 }
-/* background color: #6c757d */
+/* Footer styling */
 .footer {
   height: 50px;
   background-color: #6c757d;
   padding: 10px;
 }
 
+/* Sets styling for pics to retain aspect ratio and not go fullscale or wacky */
+.portpic {
+  max-width: 350px;
+  max-height: 350px;
+  height: auto;
+  width: auto;
+}
+/*Text styling for footer */
 .footer p {
   color: #8ecef3;
   opacity: 0.2;
 }
 
-h1 {
+/* Just forces serif on text that needs it */
+.serif {
   font-family: serif !important;
 }
 
+/* Header colors in card bodies */
 .card-body h1 {
   color: #30bbbb;
   font-weight: bolder;
 }
 
+/* Footer top blueish green border */
 .border-top {
     border-color: #30bbbb!important;
     border-width: 5px 0px 0px 0px!important;
