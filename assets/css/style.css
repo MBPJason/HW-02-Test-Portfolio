@@ -26,13 +26,6 @@ body {
   padding: 10px;
 }
 
-/* Sets styling for pics to retain aspect ratio and not go fullscale or wacky */
-.portpic {
-  max-width: 350px;
-  max-height: 350px;
-  height: auto;
-  width: auto;
-}
 /*Text styling for footer */
 .footer p {
   color: #8ecef3;
